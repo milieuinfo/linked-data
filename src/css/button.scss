@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    margin-right: 7px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0 12px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: $green;
+    border: none;
+    color: #fff;
+  
+    &:hover, &:focus, &::-moz-focus-inner {
+      background-color: #42796d;
+      outline: 0;
+      border: 0;
+    }
+}

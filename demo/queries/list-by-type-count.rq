@@ -1,0 +1,9 @@
+SELECT DISTINCT (COUNT(?uri) AS ?rowCount)
+
+%from%
+
+WHERE {
+    ?uri a ?type, <%resource%> .
+
+    %filters%
+}

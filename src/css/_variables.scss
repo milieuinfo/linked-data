@@ -1,0 +1,76 @@
+// fonts
+$font-header: "Flanders Art Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font-header-light: "Flanders Art Sans Light", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+$font-heading: "Flanders Art Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font-heading-light: "Flanders Art Sans Light", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+$font-footer-logo: "Flanders Art Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+$font-text: "Lato", "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+$font-text-light: "Lato Light", "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+$font-text-hairline: "Lato Hairline", "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+
+// palette
+
+$green: #4da692;
+$green-dark: #42796d;
+$grey-extra-light: #f9f9f9;
+$grey-light: #f5f5f5;
+$grey: #cbd2da;
+$grey-dark: #666;
+$grey-extra-dark: #494949;
+$white: #fff;
+$blue: #3184d6;
+
+// colors
+
+$body-bg-color: $grey-extra-light;
+$text-color: $grey-dark;
+
+$header-color: $grey-extra-dark;
+$header-link-color: $grey-extra-dark;
+
+$heading-color: $green-dark;
+$heading-color-dark: $grey-extra-dark;
+$link-color: $green;
+
+$label-bg-color: $green;
+$label-color: $white;
+
+$border-color-light: $grey-light;
+$border-color-dark: $grey;
+$border-color-green: $green-dark;
+
+$card-title-color: $text-color;
+$card-title-bg-color: $white;
+$card-title-color-dark: $white;
+$card-title-bg-color-dark: $green-dark;
+
+$table-heading-color: $grey-extra-dark;
+$table-cell-color: $grey-dark;
+$table-zebra-bg-color: $grey-extra-light;
+
+// flex
+
+$flex-gutter-width: 8px;
+$flex-gutter-height: 16px;
+$flex-tablet-max-width: 1023px;
+$flex-mobile-max-width: 599px;
+
+// mixins
+
+@mixin layout() {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 1040px) {
+    width: 96%;
+  }
+}
+
+@mixin box-shadow($blur: 8px) {
+  box-shadow: 0 0 $blur rgba(0, 0, 0, 0.1);
+}

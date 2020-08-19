@@ -1,0 +1,217 @@
+@import './fonts';
+@import './_variables';
+@import './reset';
+@import './export-options';
+@import './table';
+@import './footer';
+@import './print';
+@import './button';
+
+body {
+  background: $body-bg-color url("../img/background-pattern.png");
+  font-family: $font-text-light;
+  color: $text-color;
+  font-size: 18px;
+  min-height: 100%;
+  position: relative;
+  // enable fade-in
+  transition: opacity 1s;
+}
+// hide old header
+#header {
+    display: none;
+}
+
+#content {
+
+  .content {
+    padding-top: 36px;
+    padding-bottom: 140px;
+  }
+
+  // lists
+  ul {
+    padding: 4px 16px 4px 24px;
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    li {
+      margin: 8px 0;
+      line-height: 1.2em;
+    }
+  }
+
+  // links
+  a {
+    text-decoration: none;
+    color: $link-color;
+    cursor: pointer;
+    font-family: $font-text;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .dark {
+    background-color: $green-dark;
+    color: $grey-light;
+
+    * {
+      color: $grey-light;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+
+  p {
+    line-height: 1.5em;
+
+    &.intro {
+      font-size: 1.2em;
+    }
+  }
+
+  // lines
+
+  hr {
+    border: none;
+    border-top: 1px solid $grey;
+    margin: 24px 0;
+  }
+
+  // headings
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading-light;
+    color: $heading-color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+   h2 + h3 {
+     margin-top: -0.5em;
+   }
+
+  img {
+    max-width: 100%;
+  }
+
+  // forms
+
+  form {
+    position: relative;
+
+    .fields {
+      padding: 4px 16px;
+
+    }
+
+    .flex-item {
+      padding-bottom: 8px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 14px;
+      line-height: 18px;
+      border: 1px solid $border-color-dark;
+      vertical-align: top;
+      margin-bottom: 5px;
+
+      &:focus {
+        border: 1px solid $border-color-green;
+      }
+    }
+
+    textarea {
+      min-height: 250px;
+      font-family: "Courier New", monospace;
+      font-size: 13px;
+      line-height: 14px;
+    }
+
+    select {
+      height: 36px;
+    }
+
+    .buttons {
+      padding: 0 16px 12px;
+      text-align: left;
+
+      button {
+        @extend .button;
+      }
+
+      .status {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  // animations
+
+  .pulsing {
+    animation: pulsing 2s infinite;
+  }
+
+  @keyframes pulsing {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  .loader {
+    height: 2px;
+    background-color: transparent;
+
+    &.loading {
+      animation: loading 5s infinite;
+      background-color: $green;
+    }
+  }
+
+  @keyframes loading {
+    0%, 100% { width: 0; }
+    50% { width: 100%; }
+  }
+}

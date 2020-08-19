@@ -1,0 +1,27 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dct: <http://purl.org/dc/terms/>
+
+SELECT DISTINCT
+    (?uri AS ?URI)
+    (?label AS ?Label)
+    (?type AS ?Type)
+    (?typeLabel AS ?_TypeLabel)
+
+%from%
+
+WHERE {
+    <%resource%> dct:relation ?type.    
+    ?uri a ?type.
+    OPTIONAL { ?uri rdfs:label ?uriRdfsLabel }
+    OPTIONAL { ?uri skos:prefLabel ?uriSkosLabel }
+    OPTIONAL { ?uri dct:title ?uriDctTitle }
+    BIND(COALESCE(?uriRdfsLabel, ?uriSkosLabel, ?uriDctTitle) AS ?label)
+
+    OPTIONAL { ?type rdfs:label ?typeLabel }
+
+    %filters%
+}
+
+ORDER BY %sortDirection%(?%sortField%)
+LIMIT %pageSize% OFFSET %offset%

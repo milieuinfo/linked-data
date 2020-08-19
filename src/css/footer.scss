@@ -1,0 +1,68 @@
+@import './_variables';
+
+$footer-bg-color: $white;
+$footer-color: $grey-extra-dark;
+$footer-claim-color: $grey-extra-dark;
+$footer-department-link-color: $blue;
+
+#footer {
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  font-size: 14px;
+  line-height: 48px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  border-top: 1px solid $border-color-dark;
+
+  @media (max-width: 650px) {
+    text-align: center;
+  }
+
+  > div {
+    @include layout();
+    height: 100%;
+    padding: 30px 0;
+
+    .logo {
+      display: inline-block;
+      vertical-align: top;
+      width: 150px;
+      height: 51px;
+      background: transparent url("../img/footer-logo.png") center left no-repeat;
+      margin-right: 7%;
+      padding: 10px 0 0 45px;
+      font-family: $font-footer-logo;
+
+      .title {
+        font-size: 18px;
+      }
+
+      .claim {
+        display: inline-block;
+        font-size: 12px;
+        color: $footer-claim-color;
+      }
+    }
+
+    .site-info {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 7px;
+
+      @media (max-width: 650px) {
+        text-align: left;
+      }
+
+      > * {
+        line-height: 1.2em;
+      }
+
+      a {
+        color: $footer-department-link-color;
+      }
+    }
+  }
+}

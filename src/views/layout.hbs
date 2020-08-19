@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:qudt="http://qudt.org/schema/qudt#">
+<head>
+    <meta charset="utf-8"/>
+    <title>{{ title }}{{ titleSuffix }}</title>
+    <link rel="shortcut icon" href="/dist/img/favicon.ico" />
+</head>
+<body about="{{ uri }}">
+    <div id="header">
+        <div id="logo">
+            <a href="/">
+                <span>LNE</span>
+            </a>
+        </div>
+    </div>
+    <div id="content">
+        <ld-view>
+            {{{ body }}}
+        </ld-view>
+    </div>
+    {{> footer }}
+    {{> init }}
+</body>
+</html>

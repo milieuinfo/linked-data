@@ -1,0 +1,84 @@
+
+<h1>Zendantennes - Linked Data</h1>
+
+<flex-container>
+    <flex-item dsk="66" mob="100">
+        <ld-card>
+            <ld-card-title class="dark">
+                <h2>Welkom op Zendantennes</h2>
+            </ld-card-title>
+            <img src="/dist/img/hero-light.png" />
+            <ld-card-content>
+                <p class="intro">
+                    This is an introduction paragraph.<br/>
+                    It gets printed in a larger font.
+                </p>
+                <h3>Dev pointers</h3>
+                <ul>
+                    <li><a href="/id/straling">Resource List (straling)</a></li>
+                    <li><a href="/id/resource/1">Resource view (with all widgets)</a></li>
+                    <li><a href="/query-results">Query results</a></li>
+                    <li><a href="/ontology">Ontology</a></li>
+                </ul>
+            </ld-card-content>
+        </ld-card>
+
+        <ld-card>
+            <ld-card-title class="dark">
+                Exploreer de dataset
+            </ld-card-title>
+            <ld-accordion>
+                <ld-lookup-form samples="/samples/imjv-lookup.txt">
+                    Opzoeken op basis van identifier
+                </ld-lookup-form>
+
+                <ld-sparql-form endpoint="https://id.milieuinfo.be/imjv/sparql" samples="/samples/imjv-sparql.txt">
+                    Opzoeken met een SPARQL zoekopdracht
+                </ld-sparql-form>
+
+                <ld-search-form endpoint="https://id.milieuinfo.be/imjv/keywordsearch" samples="/samples/imjv-search.txt">
+                    Opzoeken met een sleutelwoord
+                </ld-search-form>
+            </ld-accordion>
+        </ld-card>
+    </flex-item>
+
+    <flex-item dsk="33" mob="100">
+        <ld-card>
+            <ld-card-title>
+                Beschikbare datasets
+            </ld-card-title>
+            <ld-card-content>
+                <ul>
+                    <li><a href="/id/dataset/zendantennes">Zendantennes</a></li>
+                    <li><a href="/id/dataset/ontology/antenne">Antenne ontology</a></li>
+                    <li><a href="https://data.zendantennes.omgeving.vlaanderen.be/id/conceptscheme/antenne_dossier_type" target="_ext">Antenne dossiertype controlled vocabulary</a></li>
+                </ul>
+            </ld-card-content>
+        </ld-card>
+
+        <ld-card>
+            <ld-card-title>
+                Gebruikte ontologieën
+            </ld-card-title>
+            <ld-card-content>
+                <ul>
+                    <li><a href="https://data.omgeving.vlaanderen.be/ns/dossier" target="_ext">Dossier</a></li>
+                    <li><a href="https://data.omgeving.vlaanderen.be/ns/waarde" target="_ext">Waarde</a></li>
+                    <li><a href="https://data.zendantennes.omgeving.vlaanderen.be/ns/antenne" target="_ext">Zendantennes</a></li>
+                </ul>
+            </ld-card-content>
+        </ld-card>
+
+        <ld-card>
+            <ld-card-title>
+                Gebruikte gecontroleerde lijstjes
+            </ld-card-title>
+            <ld-card-content>
+                <ul>
+                    <li><a href="https://data.zendantennes.omgeving.vlaanderen.be/id/conceptscheme/antenne_dossier_type" target="_ext">Antenne dossiertype</a></li>
+                </ul>
+            </ld-card-content>
+        </ld-card>
+    </flex-item>
+</flex-container>

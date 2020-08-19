@@ -1,0 +1,17 @@
+
+<h1>Straling</h1>
+
+<ld-card>
+    <ld-card-title class="dark">
+        Exploreer de collectie
+    </ld-card-title>
+    <ld-card-content>
+        <ld-data-table
+                endpoint="http://fuseki-zendantennes-on-1.vm.cumuli.be:3030/zendantennes/sparql"
+                query="/queries/list-by-type.rq"
+                count-query="/queries/list-by-type-count.rq"
+                search-fields="uri,label"
+                resource="https://data.zendantennes.omgeving.vlaanderen.be/ns/zendantenne#Straling"
+        ></ld-data-table>
+    </ld-card-content>
+</ld-card>

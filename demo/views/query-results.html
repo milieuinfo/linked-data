@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:qudt="http://qudt.org/schema/qudt#">
+<head>
+    <meta charset="utf-8"/>
+    <title>SPARQL zoekopdracht resultaten - Departement Omgeving - Linked Data</title>
+    <link rel="shortcut icon" href="/dist/img/favicon.ico" />
+</head>
+<body about="">
+    <div id="header">
+        <div id="logo">
+            <a href="/">
+                <span>LNE</span>
+            </a>
+        </div>
+    </div>
+    <div id="content">
+        <ld-view>
+            <h1>SPARQL zoekopdracht resultaten</h1>
+<ld-card>
+    <table>
+        <thead>
+        <tr>
+            <th colspan="1" rowspan="1">subject</th>
+            <th colspan="1" rowspan="1">label</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="1" rowspan="1">
+                <a href="http://id.milieuinfo.be:80/imjv/emissiepunt/01799855000184/4990#id">https://id.milieuinfo.be/imjv/emissiepunt/01799855000184/4990#id</a>
+            </td>
+            <td colspan="1" rowspan="1">COTAC BELGIUM : SCHOORSTEEN STOOMKETEL BABCOCK WANSON</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1">
+                <a href="http://id.milieuinfo.be:80/imjv/emissiepunt/01799855000184/4991#id">https://id.milieuinfo.be/imjv/emissiepunt/01799855000184/4991#id</a>
+            </td>
+            <td colspan="1" rowspan="1">COTAC BELGIUM : TANKREINIGINGSINSTALLATIE</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1">
+                <a href="http://id.milieuinfo.be:80/imjv/emissiepunt/01799855000184/4989#id">https://id.milieuinfo.be/imjv/emissiepunt/01799855000184/4989#id</a>
+            </td>
+            <td colspan="1" rowspan="1">COTAC BELGIUM : SCHOORSTEEN CHAUFFAGEKETEL VIESSMANN</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1">
+                <a href="http://id.milieuinfo.be:80/imjv/emissiepunt/01856771000272/10494#id">https://id.milieuinfo.be/imjv/emissiepunt/01856771000272/10494#id</a>
+            </td>
+            <td colspan="1" rowspan="1">BIOSTOOM OOSTENDE : ROOSTEROVEN</td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1">
+                <a href="http://id.milieuinfo.be:80/imjv/emissiepunt/01799855000184/4988#id">https://id.milieuinfo.be/imjv/emissiepunt/01799855000184/4988#id</a>
+            </td>
+            <td colspan="1" rowspan="1">COTAC BELGIUM : SCHOORSTEEN STOOMGENERATOR CLAYTON</td>
+        </tr>
+        </tbody>
+    </table>
+</ld-card>
+
+        </ld-view>
+    </div>
+    <div id="footer">
+       <div>
+          <div class="logo">
+             <span class="title">Vlaanderen</span>
+             <span class="claim">verbeelding werkt</span>
+          </div>
+          <div class="site-info">
+             <h3>Dit is een officiële website van de Vlaamse overheid</h3>
+             <span>uitgegeven door het <a href="https://www.lne.be/">Departement Omgeving</a></span>
+          </div>
+       </div>
+    </div>
+    <script>
+        (function () {
+            // define base URL (e.g. '/')
+            const baseUrl = '/';
+    
+            // hide body until styles are loaded
+            document.querySelector('body').style.opacity = 0;
+    
+            // load babel polyfill if needed
+            if (!window.Promise || !window.Symbol) {
+                let polyfillScript = document.createElement('script');
+                polyfillScript.src = baseUrl + 'dist/babel-polyfill.js';
+                document.head.appendChild(polyfillScript);
+            }
+    
+            // activate components in #content
+            let bundleScript = document.createElement('script');
+            bundleScript.src = baseUrl + 'dist/index.js';
+            document.head.appendChild(bundleScript);
+        })();
+    </script>
+</body>
+</html>

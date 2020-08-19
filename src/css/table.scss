@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    max-width: 100%;
+    font-size: 16px;
+    background-color: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 16px 0;
+    position: relative;
+    overflow: auto;
+
+    thead {
+        vertical-align: middle;
+
+        th {
+            vertical-align: bottom;
+            margin: 0;
+            text-align: left;
+            padding: 0 16px;
+            font-family: "Flanders Art Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333;
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+
+    tbody {
+
+        tr {
+            &:nth-child(even) td {
+                background-color: #f9f9f9;
+            }
+
+            td {
+                text-align: left;
+                padding: 8px 16px;
+                border-top: 1px solid #ddd;
+                background-color: #fff;
+                line-height: 20px;
+                vertical-align: top;
+                color: #5e5e5e;
+            }
+        }
+    }
+}

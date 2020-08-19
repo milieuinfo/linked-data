@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Flanders Art Sans";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Flanders Art Sans'),
+    url('../fonts/FlandersArt/FlandersArtSans-Regular.woff') format('woff'),
+    url('../fonts/FlandersArt/FlandersArtSans-Regular.ttf')
+  ;
+}
+
+@font-face {
+  font-family: "Flanders Art Sans Light";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Flanders Art Sans Light'),
+    url('../fonts/FlandersArt/FlandersArtSans-Light.woff') format('woff'),
+    url('../fonts/FlandersArt/FlandersArtSans-Light.ttf')
+  ;
+}
+
+@font-face {
+  font-family: "Flanders Art Sans Medium";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Flanders Art Sans Medium'),
+    url('../fonts/FlandersArt/FlandersArtSans-Medium.woff') format('woff'),
+    url('../fonts/FlandersArt/FlandersArtSans-Medium.ttf')
+  ;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Lato'),
+    url(../fonts/Lato/lato-reg-webfont.woff) format('woff'),
+    url(../fonts/Lato/Lato-Regular.ttf)
+  ;
+}
+
+@font-face {
+  font-family: "Lato Light";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Lato Light'),
+    url(../fonts/Lato/lato-lig-webfont.woff) format('woff'),
+    url(../fonts/Lato/Lato-Light.ttf)
+  ;
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Lato Bold'),
+    url(../fonts/Lato/lato-bol-webfont.woff) format('woff'),
+    url(../fonts/Lato/Lato-Bold.ttf)
+  ;
+}
+
+@font-face {
+  font-family: "Lato Hairline";
+  font-style: normal;
+  font-display: swap;
+  src:
+    local('Lato'),
+    url(../fonts/Lato/Lato-Hairline.ttf)
+  ;
+}
+

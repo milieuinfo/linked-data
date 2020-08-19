@@ -1,0 +1,21 @@
+<script>
+    (function () {
+        // define base URL (e.g. '/')
+        const baseUrl = '/';
+
+        // hide body until styles are loaded
+        document.querySelector('body').style.opacity = 0;
+
+        // load babel polyfill if needed
+        if (!window.Promise || !window.Symbol) {
+            let polyfillScript = document.createElement('script');
+            polyfillScript.src = baseUrl + 'dist/babel-polyfill.js';
+            document.head.appendChild(polyfillScript);
+        }
+
+        // activate components in #content
+        let bundleScript = document.createElement('script');
+        bundleScript.src = baseUrl + 'dist/index.js';
+        document.head.appendChild(bundleScript);
+    })();
+</script>
