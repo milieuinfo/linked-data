@@ -62,7 +62,7 @@
     "ui-dev": "webpack-dev-server --config dev/webpack.config.dev.js",
     "app-prod": "nodemon dev/app.js",
     "ui-prod": "webpack-cli --watch --config dev/webpack.config.prod.js --colors --progress --hide-modules || true",
-    "build": "node bin/build.js",
+    "build": "webpack-cli --config dev/webpack.config.prod.js",
     "release": "npm install && npm run build && npm version $npm_package_config_version && git add .. && git commit -m 'release' && git push && npm publish"
   }
 }
