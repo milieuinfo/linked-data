@@ -16,7 +16,8 @@
       "env"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@bnowack/deployer": "gitlab:bnowack/deployer#1.2.2",
     "babel-core": "^6.26.3",
@@ -54,13 +55,14 @@
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.2.1",
-    "yasgui-yasqe": "^2.11.22"
+    "@triply/yasgui": "^4.2.28"
   },
   "scripts": {
     "app-dev": "nodemon dev/app-dev.js",
     "ui-dev": "webpack-dev-server --config dev/webpack.config.dev.js",
     "app-prod": "nodemon dev/app.js",
     "ui-prod": "webpack-cli --watch --config dev/webpack.config.prod.js --colors --progress --hide-modules || true",
-    "build": "node bin/build.js"
+    "build": "node bin/build.js",
+    "release": "npm install && npm run build && npm version $npm_package_config_version && git add .. && git commit -m 'release' && git push && npm publish"
   }
 }

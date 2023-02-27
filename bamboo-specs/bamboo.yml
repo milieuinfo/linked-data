@@ -1,0 +1,52 @@
+---
+version: 2
+plan:
+  project-key: DAT
+  key: OMGEVINGLINKEDDATACOMPONENTS
+  name: OmgevingLinkedDataComponents
+
+triggers:
+  - polling: 130
+
+variables:
+  release_version: patch
+
+stages:
+  - Release:
+      manual: true
+      jobs:
+        - Release
+
+Release:
+  key: REL
+  tasks:
+    - clean
+    - script: |
+        #!/bin/bash
+        set -e
+        set -x
+        /opt/scripts/git/git-repository-information-restore.sh
+        export git_repo="${bamboo_repository_git_repositoryUrl}"
+        export release_version="${bamboo.release_version}"
+        docker-compose -f docker/docker-compose-release.yml run release
+  final-tasks:
+    - script: /opt/scripts/docker/stop-docker-containers.sh
+  requirements:
+    - REMOTE_ONLY
+
+---
+version: 2
+plan:
+  key: DAT-OMGEVINGLINKEDDATACOMPONENTS
+
+plan-permissions:
+  - groups:
+      - bamboo-admin
+      - bamboo-release
+      - developer-admin
+    permissions:
+      - view
+      - edit
+      - build
+      - clone
+      - admin
