@@ -28,6 +28,7 @@ Release:
         /opt/scripts/git/git-repository-information-restore.sh
         export git_repo="${bamboo_repository_git_repositoryUrl}"
         export release_version="${bamboo.release_version}"
+        docker build -t milieuinfo/linked-data:latest docker
         docker-compose -f docker/docker-compose-release.yml run release
   final-tasks:
     - script: /opt/scripts/docker/stop-docker-containers.sh

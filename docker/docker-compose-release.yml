@@ -1,7 +1,7 @@
 version: "2"
 services:
   release:
-    image: ${DOCKER_REGISTRY}milieuinfo/ubuntu-node:14
+    image: milieuinfo/linked-data:latest
     environment:
       - http_proxy=${http_proxy}
       - https_proxy=${https_proxy}
