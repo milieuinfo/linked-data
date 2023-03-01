@@ -4,7 +4,7 @@
   "version": "1.7.0",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/bnowack/omgeving-ld.git"
+    "url": "git+https://github.com/milieuinfo/linked-data.git"
   },
   "license": "UNLICENSED",
   "private": true,
