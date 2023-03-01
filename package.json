@@ -16,7 +16,7 @@
       "env"
     ]
   },
-  "devDependencies": {
+  "dependencies": {
     "@bnowack/deployer": "git+https://gitlab.com/bnowack/deployer.git#1.2.2",
     "@triply/yasgui": "^4.2.28",
     "babel-core": "^6.26.3",
