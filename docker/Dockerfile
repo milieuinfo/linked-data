@@ -7,6 +7,8 @@ RUN apt-get update \
   && apt-get install -y \
   curl \
   ca-certificates \
+  build-essential \
+  python \
   --no-install-recommends
 
 # bash will load volta() function via .bashrc
@@ -23,8 +25,3 @@ ENV PATH $VOLTA_HOME/bin:$PATH
 
 # install volta
 RUN curl https://get.volta.sh | bash
-
-# install python2
-RUN apt-get update
-
-RUN apt-get install -y python
