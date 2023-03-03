@@ -61,7 +61,7 @@
     "ui-prod": "webpack-cli --watch --config dev/webpack.config.prod.js --colors --progress --hide-modules || true",
     "build": "webpack-cli --config dev/webpack.config.prod.js",
     "build-javascript": "node bin/build.js",
-    "release": "npm install && npm run build && npm version --no-git-tag-version $npm_package_config_version && git add .. && git commit -m 'release' && git push && npm publish"
+    "release": "npm install && npm run build && npm version --no-git-tag-version $npm_package_config_version && git add . && git commit -m 'release' && git push && npm publish"
   },
   "volta": {
     "node": "10.24.1"
