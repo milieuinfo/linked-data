@@ -1,3 +1,7 @@
 /node_modules
-/demo/
-/dist/
+/docker
+/src
+/dev
+/demo
+/bin
+/bamboo-specs

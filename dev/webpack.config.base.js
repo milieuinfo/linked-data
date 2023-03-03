@@ -4,7 +4,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
-fs.emptyDir(path.resolve(__dirname, '../dist'));
+fs.emptyDir(path.resolve(__dirname, '../build/dist'));
 
 module.exports = {
     entry: {
@@ -13,8 +13,8 @@ module.exports = {
         "index": './src/js/index.js'
     },
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, '../build/dist'),
+        publicPath: '/build/dist/',
         filename: '[name].js?[chunkhash:4]'
     },
     plugins: [
@@ -24,7 +24,9 @@ module.exports = {
             { from: './src/img/favicon.ico', to: 'img/favicon.ico' },
             { from: './src/img/hero.png', to: 'img/hero.png' },
             { from: './src/img/hero-light.png', to: 'img/hero-light.png' },
-            { from: './src/img/marker-selected.png', to: 'img/marker-selected.png' }
+            { from: './src/img/marker-selected.png', to: 'img/marker-selected.png' },
+            { from: './src/queries', to: '../queries' },
+            { from: './src/scripts', to: '../scripts' }
         ])
     ],
     module: {
