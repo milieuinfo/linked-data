@@ -16,7 +16,7 @@
       "env"
     ]
   },
-  "dependencies": {
+  "devDependencies": {
     "@triply/yasgui": "4.2.28",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
