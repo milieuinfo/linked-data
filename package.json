@@ -7,7 +7,7 @@
     "url": "git+https://github.com/milieuinfo/linked-data.git"
   },
   "license": "UNLICENSED",
-  "private": true,
+  "private": false,
   "babel": {
     "plugins": [
       "syntax-dynamic-import"
