@@ -64,6 +64,6 @@
     "release": "npm install && npm run build && npm version $npm_package_config_version && git add .. && git commit -m 'release' && git push && npm publish"
   },
   "volta": {
-    "node": "14.21.3"
+    "node": "12.22.12"
   }
 }
