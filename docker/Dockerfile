@@ -27,4 +27,4 @@ RUN curl https://get.volta.sh | bash
 # install python2
 RUN apt-get update
 
-RUN apt-get install -y python2
+RUN apt-get install -y python
