@@ -3,12 +3,6 @@ services:
   release:
     image: milieuinfo/linked-data:latest
     environment:
-      - http_proxy=${http_proxy}
-      - https_proxy=${https_proxy}
-      - no_proxy=${no_proxy}
-      - HTTP_PROXY=${http_proxy}
-      - HTTPS_PROXY=${https_proxy}
-      - NO_PROXY=${no_proxy}
       - GIT_REPO=${git_repo}
       - SKIP_WCT_SAUCE_POSTINSTALL_DOWNLOAD=1
       - artifactory_user=${artifactory_user}
