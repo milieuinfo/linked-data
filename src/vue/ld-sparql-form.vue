@@ -28,7 +28,7 @@
     import AccordionPaneMixin from '../js/accordion-pane-mixin';
     import ApiFormMixin from '../js/api-form-mixin';
     import '@triply/yasgui/build/yasgui.min.css'
-    import YASQE from '@triply/yasgui/build/yasgui.min.js'
+    import YASQE from '@triply/yasqe/build/yasqe.min.js'
 
     export default {
         mixins: [AccordionPaneMixin, ApiFormMixin],
