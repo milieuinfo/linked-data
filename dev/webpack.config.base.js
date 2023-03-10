@@ -14,7 +14,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../build/dist'),
-        publicPath: '/build/dist/',
+        publicPath: '/dist/',
         filename: '[name].js?[chunkhash:4]'
     },
     plugins: [
