@@ -4,8 +4,7 @@
       <slot></slot>
     </h4>
     <form class="pane" method="GET" @submit.prevent="onSubmit" @reset="onSparqlReset">
-      <div class="fields">
-        <textarea v-model="inputValue" placeholder="Voer een SPARQL zoekopdracht in ..."></textarea>
+      <div id="query-field" class="fields">
       </div>
       <div class="buttons">
         <flex-container>
@@ -75,18 +74,17 @@ export default {
       }
 
       this.yasqe = new Yasqe(
-          this.$el.querySelector('.fields'),
+          this.$el.querySelector('#query-field'),
           {
             showQueryButton: false,
-            resizeable: false
+            resizeable: false,
           }
       );
       this.resetYasqe();
     },
 
     resetYasqe() {
-      const textarea = this.$el.querySelector('textarea');
-      this.yasqe.setValue('# ' + textarea.getAttribute('placeholder'));
+      this.yasqe.setValue('# Voer een SPARQL zoekopdracht in ...');
     },
 
     parseSamples(response) {
