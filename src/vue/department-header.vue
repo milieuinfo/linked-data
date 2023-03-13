@@ -42,10 +42,10 @@
         },
         methods: {
             login() {
-                window.location = encodeURI(this.activeurl + '/oauth/initialize?sendmebackto=' + window.location.href);
+                window.location.href = encodeURI(  '/oauth2_initialize?sendmebackto=' + window.location.href);
             }, 
             logout() {
-                window.location.pathname = encodeURI('/teardown?sendmebackto=' + window.location.href);
+                window.location.href = encodeURI('/teardown?sendmebackto=' + window.location.href);
             }
         }
     }
