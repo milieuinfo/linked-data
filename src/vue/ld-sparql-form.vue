@@ -80,7 +80,7 @@ export default {
             resizeable: false,
             createShareableLink: (element) => {
               let query = element.getValue();
-              return this.endpoint + '?query=' + encodeURIComponent(query);
+              return location.protocol + '//' + location.host + this.endpoint + '?query=' + encodeURIComponent(query);
             }
           }
       );
