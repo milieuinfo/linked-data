@@ -9,8 +9,8 @@
       <div class="buttons">
         <flex-container>
           <flex-item dsk="66" mob="100">
-            <button type="submit">Zoekopdracht uitvoeren</button>
-            <button type="reset">Herladen</button>
+            <button type="submit" id="sparql-submit-button">Zoekopdracht uitvoeren</button>
+            <button type="reset" id="sparql-reset-button">Herladen</button>
             <span class="status pulsing" v-if="loading">Even geduld ...</span>
           </flex-item>
           <flex-item dsk="33" mob="100">
@@ -78,6 +78,10 @@ export default {
           {
             showQueryButton: false,
             resizeable: false,
+            createShareableLink: (element) => {
+              let query = element.getValue();
+              return this.endpoint + '?query=' + encodeURIComponent(query);
+            }
           }
       );
       this.resetYasqe();
@@ -105,17 +109,21 @@ export default {
       ;
     },
 
-    onSparqlReset() {
-      this.onReset();
-      this.resetYasqe();
+    onSparqlReset(e) {
+      if(e.submitter && e.submitter.id === 'sparql-reset-button') {
+        this.onReset();
+        this.resetYasqe();
+      }
     },
 
-    onSubmit() {
-      let query = this.yasqe ? this.yasqe.getValue() : this.inputValue;
-      if (query) {
-        this.loading = true;
-        location.hash = this.name + '&query=' + encodeURIComponent(query);// allow re-init when user hits BACK button
-        location.href = this.endpoint + '?query=' + encodeURIComponent(query);
+    onSubmit(e) {
+      if(e.submitter && e.submitter.id === 'sparql-submit-button') {
+        let query = this.yasqe ? this.yasqe.getValue() : this.inputValue;
+        if (query) {
+          this.loading = true;
+          location.hash = this.name + '&query=' + encodeURIComponent(query);// allow re-init when user hits BACK button
+          location.href = this.endpoint + '?query=' + encodeURIComponent(query);
+        }
       }
     }
   }
