@@ -78,9 +78,13 @@ export default {
           {
             showQueryButton: false,
             resizeable: false,
+            requestConfig: {
+              endpoint: location.protocol + '//' + location.host + this.endpoint
+            },
             createShareableLink: (element) => {
               let query = element.getValue();
-              return location.protocol + '//' + location.host + this.endpoint + '?query=' + encodeURIComponent(query);
+              return location.protocol + '//' + location.host + this.endpoint + '?query='
+                  + encodeURIComponent(query);
             }
           }
       );
