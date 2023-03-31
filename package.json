@@ -1,7 +1,7 @@
 {
   "name": "omgeving-ld",
   "description": "Omgeving Linked Data Components",
-  "version": "1.7.14",
+  "version": "1.7.15",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/milieuinfo/linked-data.git"
