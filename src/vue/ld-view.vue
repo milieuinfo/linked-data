@@ -2,7 +2,7 @@
     <div class="ld-view">
         <department-header :activeurl="activeurl">
             <a href="https://www.vlaanderen.be/nl">Vlaanderen</a>
-            <a href="https://www.lne.be/">Departement Omgeving</a>
+            <a href="https://omgeving.vlaanderen.be/">Departement Omgeving</a>
             <a href="/">Linked Data</a>
         </department-header>
         <div class="content">
