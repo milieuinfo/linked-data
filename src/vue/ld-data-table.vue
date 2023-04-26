@@ -162,10 +162,10 @@
                         text-align: left;
                         padding: 0 16px;
                         font-family: $font-text-light;
-                        color: $grey-dark;
+                        color: $table-th-color;
                         font-size: 16px;
                         line-height: 40px;
-                        border-bottom: 2px solid $green;
+                        border-bottom: 2px solid $table-th-border-color;
                         cursor: pointer;
 
                         .sort-arrow {
@@ -186,11 +186,11 @@
                     td {
                         text-align: left;
                         padding: 8px 16px;
-                        border-bottom: 1px solid $grey-light;
+                        border-bottom: 1px solid $table-td-border-color;
                         background-color: #fff;
                         line-height: 20px;
                         vertical-align: top;
-                        color: #5e5e5e;
+                        color: $table-td-color;
 
                         &.row-index {
                             text-align: right;
@@ -198,7 +198,7 @@
                     }
 
                     tr:nth-child(even) td {
-                        background-color: #f9f9f9;
+                        background-color: $table-tr-bg-color;
                     }
                 }
             }
@@ -223,7 +223,7 @@
                     margin-bottom: 5px;
 
                     &:focus {
-                        border: 1px solid $border-color-green;
+                        border: 1px solid $border-color-yellow;
                     }
                 }
             }
@@ -262,20 +262,20 @@
                     cursor: pointer;
                     height: 36px;
                     width: 36px;
-                    background-color: $green;
+                    background-color: $button-bg-color;
                     border: none;
 
                     &.disabled {
                         cursor: default;
-                        background-color: $grey-light;
+                        background-color: $button-bg-color-disabled;
                         &:hover, &:focus, &::-moz-focus-inner {
                             cursor: default;
-                            background-color: $grey-light;
+                            background-color: $button-bg-color-disabled;
                         }
                     }
 
                     &:hover, &:focus, &::-moz-focus-inner {
-                      background-color: #42796d;
+                      background-color: $button-bg-color;
                       outline: 0;
                       border: 0;
                     }

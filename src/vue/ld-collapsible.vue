@@ -81,7 +81,7 @@
     .ld-collapsible {
 
         .ld-card-title {
-            background-color: $green !important;
+            background-color: $yellow !important;
 
             .title {
                 display: inline-block;

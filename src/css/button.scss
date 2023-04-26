@@ -7,12 +7,12 @@
     padding: 0 12px;
     line-height: 40px;
     font-size: 14px;
-    background-color: $green;
+    background-color: $blue;
     border: none;
     color: #fff;
   
     &:hover, &:focus, &::-moz-focus-inner {
-      background-color: #42796d;
+      background-color: $blue;
       outline: 0;
       border: 0;
     }

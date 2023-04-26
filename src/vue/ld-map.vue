@@ -203,10 +203,10 @@
             left: auto;
 
             .ol-scale-line-inner {
-                border: 1px solid #4da692;
+                border: 1px solid $map-border-color;
                 border-top: none;
                 border-bottom: none;
-                color: #333;
+                color: $map-line-color;
                 background-color: rgba(255, 255, 255, 0.8);
             }
         }
@@ -218,10 +218,10 @@
                 height: 40px;
                 width: 40px;
                 line-height: .4em;
-                background-color: #4da692;
+                background-color: $map-button-color;;
 
                 &:focus, &:hover {
-                    background-color: #42796d;
+                    background-color: $map-button-color;
                 }
             }
 

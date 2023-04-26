@@ -22,8 +22,6 @@ module.exports = {
         new VueLoaderPlugin(),
         new CopyWebpackPlugin([
             { from: './src/img/favicon.ico', to: 'img/favicon.ico' },
-            { from: './src/img/hero.png', to: 'img/hero.png' },
-            { from: './src/img/hero-light.png', to: 'img/hero-light.png' },
             { from: './src/img/marker-selected.png', to: 'img/marker-selected.png' },
             { from: './src/queries', to: '../queries' },
             { from: './src/scripts', to: '../scripts' }

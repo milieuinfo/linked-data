@@ -36,7 +36,7 @@
     text-overflow: ellipsis;
 
     + .ld-object {
-        border-top: 1px solid $grey;
+        border-top: 1px solid $object-border-color;
     }
 
     &.bnode {

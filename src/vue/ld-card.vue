@@ -18,12 +18,12 @@
 
     .ld-card {
         @include box-shadow();
-        background-color: #fff;
+        background-color: $card-bg-color;
         margin-bottom: 16px;
 
         &.dark {
-            background-color: $green-dark;
-            color: $white;
+            background-color: $card-bg-color-dark;
+            color: $card-color;
         }
 
         &:last-child {

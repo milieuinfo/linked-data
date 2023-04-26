@@ -208,12 +208,12 @@
 
     .ld-predicate {
         background-color: #fff;
-        border-top: 2px solid $green;
+        border-top: 2px solid $predicate-border-color;
 
         .predicate-info {
             display: block;
-            background-color: $green;
-            color: #fff;
+            background-color: $predicate-bg-color;
+            color: $text-color;
             text-align: right;
             line-height: 24px;
             padding: 4px 12px 6px 12px;
@@ -232,7 +232,7 @@
 
             .label {
                 text-transform: capitalize;
-                color: $white !important;
+                color: $text-color !important;
                 &:hover {
                     text-decoration: none !important;
                 }
@@ -276,7 +276,7 @@
                 height: 28px;
                 width: 100%;
                 -webkit-appearance: none;
-                border: 1px solid #ccc;
+                border: 1px solid $grey-light;
                 border-radius: 0;
             }
 
@@ -305,28 +305,28 @@
 
                     button {
                         cursor: pointer;
-                        background-color: $green;
+                        background-color: $button-bg-color;
                         border: none;
                         height: 28px;
                         width: 28px;
 
                         &.disabled {
                             cursor: default;
-                            background-color: $grey-light;
+                            background-color: $button-bg-color-disabled;
                             &:hover, &:focus, &::-moz-focus-inner {
                                 cursor: default;
-                                background-color: $grey-light;
+                                background-color: $button-bg-color-disabled;
                             }
                         }
 
                         &:hover, &:focus, &::-moz-focus-inner {
-                          background-color: #42796d;
+                          background-color: $button-bg-color-hover;
                           outline: 0;
                           border: 0;
                         }
 
                         .v-icon {
-                            color: #fff;
+                            color: $predicate-button-icon-color;
                         }
                     }
                 }

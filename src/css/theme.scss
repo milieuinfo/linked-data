@@ -58,15 +58,15 @@ body {
   }
 
   .dark {
-    background-color: $green-dark;
-    color: $grey-light;
+    background-color: $yellow;
+    color: $grey-extra-dark;
 
     * {
-      color: $grey-light;
+      color: $grey-extra-dark;
     }
 
     a {
-      color: $white;
+      color: $grey-dark;
     }
   }
 
@@ -157,7 +157,7 @@ body {
       margin-bottom: 5px;
 
       &:focus {
-        border: 1px solid $border-color-green;
+        border: 1px solid $border-color-yellow;
       }
     }
 
@@ -206,7 +206,7 @@ body {
 
     &.loading {
       animation: loading 5s infinite;
-      background-color: $green;
+      background-color: $yellow;
     }
   }
 

@@ -45,7 +45,7 @@
     .ld-accordion {
 
         .panes > * {
-            border-bottom: 1px solid $grey;
+            border-bottom: 1px solid $accordion-border-color;
 
             > .pane-toggle {
                 border-left: 2px solid transparent;
@@ -65,11 +65,11 @@
 
             &.active {
                 > .pane-toggle {
-                    border-left: 2px solid $green;
+                    border-left: 2px solid $accordion-active-border-color;
                 }
 
                 > .pane {
-                    border-left: 2px solid $green;
+                    border-left: 2px solid $accordion-active-border-color;
                 }
             }
         }

@@ -29,10 +29,10 @@
         font-size: 20px;
         color: $card-title-color;
         background-color: $card-title-bg-color;
-        border-bottom: 1px solid $green;
+        border-bottom: 1px solid $yellow;
 
         a {
-            color: $card-title-color !important;
+            color: $link-color !important;
         }
 
         &.dark {
@@ -41,7 +41,7 @@
             border-bottom: none;
 
             a {
-                color: $card-title-color-dark !important;
+                color: $link-color !important;
             }
         }
 

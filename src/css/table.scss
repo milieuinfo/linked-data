@@ -2,7 +2,7 @@ table {
     width: 100%;
     max-width: 100%;
     font-size: 16px;
-    background-color: #fff;
+    background-color: $table-bg-color;
     border-collapse: collapse;
     border-spacing: 0;
     margin: 16px 0;
@@ -18,7 +18,7 @@ table {
             text-align: left;
             padding: 0 16px;
             font-family: "Flanders Art Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: #333;
+            color: $table-th-color;
             font-size: 16px;
             line-height: 40px;
         }
@@ -28,17 +28,17 @@ table {
 
         tr {
             &:nth-child(even) td {
-                background-color: #f9f9f9;
+                background-color: $table-tr-bg-color;
             }
 
             td {
                 text-align: left;
                 padding: 8px 16px;
                 border-top: 1px solid #ddd;
-                background-color: #fff;
+                background-color: $table-bg-color;
                 line-height: 20px;
                 vertical-align: top;
-                color: #5e5e5e;
+                color: $table-td-color;
             }
         }
     }

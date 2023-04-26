@@ -13,7 +13,7 @@
         </div>
         <div class="banner">
             <div class="banner-contents">
-                <a class="logo" href="https://www.lne.be/"></a>
+                <a class="logo" href="https://omgeving.vlaanderen.be/"></a>
             </div>
         </div>
     </header>
@@ -60,7 +60,7 @@
 
         .breadcrumbs {
             width: 100%;
-            background-color: $white;
+            background-color: $header-bg-color;
             line-height: 44px;
             height: 45px;
 
@@ -139,7 +139,7 @@
 
             @media (max-width: 845px) {
                 background: #fff;
-                border-bottom: 1px solid $border-color-green;
+                border-bottom: 1px solid $border-color-yellow;
             }
 
             .banner-contents {
@@ -148,7 +148,7 @@
 
                 .logo {
                     display: block;
-                    background: transparent url(../img/logo-lne.png) 0 0 no-repeat;
+                    background: transparent url(../img/logo-domg.png) 0 0 no-repeat;
                     width: 389px;
                     height: 76px;
                 }
