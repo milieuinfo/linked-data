@@ -23,8 +23,10 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: './src/img/favicon.ico', to: 'img/favicon.ico' },
             { from: './src/img/marker-selected.png', to: 'img/marker-selected.png' },
+            { from: './src/img/marker.png', to: 'img/marker.png' },
             { from: './src/img/hero.png', to: 'img/hero.png' },
             { from: './src/img/hero-light.png', to: 'img/hero-light.png' },
+            { from: './src/img/logo-domg.png', to: 'img/logo-domg.png' },
             { from: './src/queries', to: '../queries' },
             { from: './src/scripts', to: '../scripts' }
         ])
