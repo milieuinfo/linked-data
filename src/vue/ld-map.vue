@@ -120,7 +120,7 @@
                 this.tilesLayer = new layer.Tile({
                     name: 'tiles',
                     source: new WMTS({
-                        url: 'https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts',
+                        url: 'https://geo.api.vlaanderen.be/GRB/wmts',
                         layer: 'grb_bsk_grijs',
                         matrixSet: 'BPL72VL',
                         format: 'image/png',
