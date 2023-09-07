@@ -35,7 +35,7 @@
 
     .ld-view {
         > .content {
-            @include layout();
+            @include layout_test();
         }
     }
 </style>
