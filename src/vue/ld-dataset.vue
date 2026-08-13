@@ -53,7 +53,7 @@ export default {
 
       // fetch the upper chain if not done yet, unless we only need the children
       if (!this.conceptChain) {
-        if (this.predicate.match(/#(dataset|hasPart|hasVersion)/)) {
+        if (this.predicate.match(/(#|^)(dataset|hasPart|hasVersion)$/)) {
           this.conceptChain = [this.subject];
           this.parentResource = this.subject;
         } else {

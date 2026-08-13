@@ -8,6 +8,7 @@ SELECT DISTINCT ?uri ?label
 WHERE {
     {
         <%parentResource%> dcat:dataset|dct:hasVersion|dct:hasPart ?uri .
+        ?uri a ?type .
         FILTER(?type = dcat:Dataset)
     }
 
